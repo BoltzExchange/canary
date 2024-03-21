@@ -34,18 +34,18 @@
     <h1>Warrent Canary</h1>
     <code id="message"></code>
     <script>
-        fetch('message.txt.asc')
+        fetch('message.txt')
             .then(response => response.text())
             .then(text => document.getElementById('message').innerText = text);
     </script>
 
     <h2>Import these keys</h2>
     <p>These keys belong to the Boltz Exchange administrators. You can import them into your gpg keychain to verify the messages.</p>
-    <code>curl https://canary.boltz.exchange/pgp.txt | gpg --import</code>
+    <code>curl https://canary.boltz.exchange/pgp.asc | gpg --import</code>
 
     <h2>Verify this message</h2>
     <p>The message above has been signed by one of the keys associated with a Boltz Exchange administrator. Import the keys from <a href="pgp.txt">here</a> and then verify this message.</p>
-    <code>curl https://canary.boltz.exchange/message.txt.asc | gpg --verify</code>
+    <code>curl https://canary.boltz.exchange/message.txt | gpg --verify</code>
     <hr>
     <img src="boltz.svg" alt="Boltz Exchange Logo" width="210px" />
     <h3>Boltz Exchange is a Privacy First, Non-Custodial Bitcoin Exchange and Lightning Service Provider</h3>
