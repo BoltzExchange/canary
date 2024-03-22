@@ -16,7 +16,8 @@ I am in control of my PGP key.
 I will update this canary within 60 days.
 
 Today is $CURRENT_DATE.
-Latest bitcoin block hash: $BEST_BLOCK_HASH
+Latest bitcoin block hash:
+$BEST_BLOCK_HASH
 EOF
 
 rm message.txt.asc
